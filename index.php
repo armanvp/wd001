@@ -57,7 +57,7 @@
 
         <div class="container">
 
-          <div class="starter-template">
+          <div class="jumbotron">
             <h1>ABAP Source. Everything about SAP's native language</h1>
             <p class="lead">We've got everything from a complete reference to reusable functions that will accelerate your development</p>
           </div>
