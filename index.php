@@ -48,44 +48,6 @@
           <div class="starter-template">
             <h1>ABAP Source. Everything about SAP's native language</h1>
             <p class="lead">We've got everything from a complete reference to reusable functions that will accelerate your development</p>
-            <div class="row">
-            <div class="btn-group" role="group" aria-label="...">
-              <button type="button" class="btn btn-default">Left</button>
-              <button type="button" class="btn btn-default">Middle</button>
-              <button type="button" class="btn btn-default">Right</button>
-            </div>
-            </div>
-
-
-            <div class="col-md-4">Functions</div>
-            <div class="col-md-4">Classes</div>
-            <div class="col-md-4">Subroutines</div>
-
-
-            <div class="row">
-              <div class="input-group">
-                <span class="input-group-addon" id="basic-addon1">@</span>
-                <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-              </div>
-
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
-                <span class="input-group-addon" id="basic-addon2">@example.com</span>
-              </div>
-
-              <div class="input-group">
-                <span class="input-group-addon">$</span>
-                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                <span class="input-group-addon">.00</span>
-              </div>
-            </div>
-
-            <div class="progress">
-  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
-    <span class="sr-only">45% Complete</span>
-  </div>
-</div>
-
           </div>
 
         </div><!-- /.container -->
