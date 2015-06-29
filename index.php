@@ -62,7 +62,35 @@
 			</div><!-- /.container -->
         </div>
 
-
+		<div class="row">
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<div class="caption">
+						<h3>Blog</h3>
+						<p>Let's talk about ABAP and how you can be an effective abaper</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<div class="caption">
+						<h3>Cheat Sheet</h3>
+						<p>Forget the syntax? We're here to help you with our Cheat Sheet!</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<div class="caption">
+						<h3>Reusable Functions</h3>
+						<p>Our reusable components will speed up your development in a snap!</p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
