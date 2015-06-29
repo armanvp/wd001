@@ -55,14 +55,12 @@
           </div>
         </nav>
 
-        <div class="container">
-
-          <div class="jumbotron">
-            <h1>ABAP Source. Everything about SAP's native language</h1>
-            <p class="lead">We've got everything from a complete reference to reusable functions that will accelerate your development</p>
-          </div>
-
-        </div><!-- /.container -->
+		<div class="jumbotron">
+			<div class="container">
+				<h1>ABAP Source. Everything about SAP's native language</h1>
+				<p class="lead">We've got everything from a complete reference to reusable functions that will accelerate your development</p>
+			</div><!-- /.container -->
+        </div>
 
 
 
