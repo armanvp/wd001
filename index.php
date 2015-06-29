@@ -61,6 +61,8 @@
 				<p class="lead">We've got everything from a complete reference to reusable functions that will accelerate your development</p>
 			</div><!-- /.container -->
         </div>
+		
+		<div class="container">
 
 		<div class="row">
 			<div class="col-md-4">
@@ -90,6 +92,8 @@
 				</div>
 			</div>
 			
+		</div>
+		
 		</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
