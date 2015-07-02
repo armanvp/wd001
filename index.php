@@ -61,7 +61,7 @@
 		<!-- Jumbotron -->
 		<div class="jumbotron">
 			<div class="container">
-				<h1>ABAPSrc. Making ABAP development fast as possible</h1>
+				<h2>ABAPSrc. Making ABAP development fast as possible</h2>
 				<p class="lead">Providing you with information that are dense yet easy to understand.</p>
 			</div><!-- /.container -->
         </div>
@@ -72,7 +72,7 @@
 			<div class="row">
 				<div class="col-sm-8 blog-main">
 					<div class="blog-post">
-						<h2 class="blog-post-title">Yet Another Welcome Post!</h2>
+						<h3 class="blog-post-title">Yet Another Welcome Post!</h3>
 						<p class="blog-post-meta">2nd of July 2015 by <a href="#">Arman</a></p>
 						<p>Today we have launched ABAPSrc where we aim to provide information for those clueless ABAPers out there!</p>
 					</div>
