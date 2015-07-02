@@ -61,7 +61,7 @@
 		<!-- Jumbotron -->
 		<div class="jumbotron">
 			<div class="container">
-				<h2>ABAPSrc. Making ABAP development fast as possible</h2>
+				<h1>ABAPSrc. Making ABAP development fast as possible</h1>
 				<p class="lead">Providing you with information that are dense yet easy to understand.</p>
 			</div><!-- /.container -->
         </div>
@@ -74,7 +74,7 @@
 					<div class="blog-post">
 						<h3 class="blog-post-title">Yet Another Welcome Post!</h3>
 						<p class="blog-post-meta">2nd of July 2015 by <a href="#">Arman</a></p>
-						<p>Today we have launched ABAPSrc where we aim to provide information for those clueless ABAPers out there!</p>
+						<p>I’ve been doing ABAP programming ever since I graduated from college and it was my first language that I learned which has been used on my entire 9 years career in software development. Through the years, I was deployed to several projects ranging from Manufacturing, Pharmaceuticals to Retail learning both the functional and technical aspecs of SAP. As the time goes by, I learned to reuse my codes, optimize programs, and develop best practices that later save me huge amout of time in developing new requirements. This library of knowledge I’d like to share to everyone specially those who are starting on ABAP development, so they can save time and write good code at the same time.<br />I hope this website will help you in the future on your development.</p>
 					</div>
 				</div>
 			</div>
