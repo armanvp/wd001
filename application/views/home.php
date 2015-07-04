@@ -1,3 +1,6 @@
+<?php
+  $this->benchmark->mark('start');
+?>
 <!DOCTYPE html>
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
 <html class="no-js" lang="en" >
@@ -56,6 +59,16 @@
     idx     TYPE sy-tabix,
     bapiret TYPE STANDARD TABLE OF bapiret2,
   END OF gt_data.</pre></blockquote>
+    </div>
+  </div>
+
+  <div class="row" >
+    <div class="large-12 columns">
+      <p><?php
+            $this->benchmark->mark('end');
+            echo $this->benchmark->elapsed_time('start','end');
+            ?></p>
+
     </div>
   </div>
 
