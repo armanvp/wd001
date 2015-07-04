@@ -3,6 +3,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Home extends CI_Controller {
 
+	public function __construct() {
+		$this->load->model('blog_model');
+	}
 	/**
 	 * Index Page for this controller.
 	 *
@@ -20,15 +23,13 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('home');
+		$data['blog'] = $this->blog_model->get_blog();
+		$this->load->view('home',$data);
 	}
 
-	public function view($page = 'home') {
+	public function view($id = FALSE) {
 
-		if(!file_exists(APPPATH.'/views/'.$page.'.php')) {
-			show_404();
-		}
-
-		$this->load->view($page);
+		$data['blog'] = $this->blog_model->get_blog($id);
+		$this->load->view('home',$data);
 	}
 }
