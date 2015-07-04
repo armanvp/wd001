@@ -1,5 +1,6 @@
 <?php
   $this->benchmark->mark('start');
+  $this->load->helper('url');
 ?>
 <!DOCTYPE html>
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
