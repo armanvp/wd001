@@ -6,6 +6,7 @@ class Home extends CI_Controller {
 	public function __construct() {
 		parent::__construct();
 		$this->load->model('blog_model');
+		$this->load->helper('date');
 	}
 	/**
 	 * Index Page for this controller.

@@ -44,7 +44,7 @@
   <div class="row">
     <div class="large-9 columns">
       <h3><?php echo $blog_item['title']; ?></h3>
-      <h6 class="subheader"><?php echo $blog_item['date']; ?> by <a href="#"><?php echo $blog_item['author']; ?></a></h6>
+      <h6 class="subheader"><?php echo date(DATE_RSS,mysql_to_unix($blog_item['date'])); ?> by <a href="#"><?php echo $blog_item['author']; ?></a></h6>
 			   <?php echo $blog_item['content']; ?>
     </div>
   </div>
