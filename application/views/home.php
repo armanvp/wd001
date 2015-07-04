@@ -44,23 +44,8 @@
   <div class="row">
     <div class="large-9 columns">
       <h3><?php echo $blog_item['title']; ?></h3>
-      <h6 class="subheader">2nd of July 2015 by <a href="#">Arman</a></h6>
-						<p class="blog-content">I’ve been doing ABAP programming ever since I graduated from college and it was my first language that I learned which has been used on my entire 9 years career in software development. Through the years, I was deployed to several projects ranging from Manufacturing, Pharmaceuticals to Retail learning both the functional and technical aspecs of SAP. As the time goes by, I learned to reuse my codes, optimize programs, and develop best practices that later save me huge amout of time in developing new requirements. This library of knowledge I’d like to share to everyone specially those who are starting on ABAP development, so they can save time and write good code at the same time.<br />I hope this website will help you in the future on your development.</p>
-            <blockquote><pre>REPORT ztest MESSAGE-ID zmm_ap.<br /><br />START-OF-SELECTION.<br />WRITE: 'Hello World'.<br /><br />DATA:
-  BEGIN OF gt_data OCCURS 0,
-    doc     TYPE c LENGTH 10,
-    idoc    TYPE edidc-docnum,
-    mat     TYPE mara-matnr,
-    type    TYPE c LENGTH 2,
-    copy    TYPE n LENGTH 3,
-    doc_new TYPE c LENGTH 10,
-    idoc_new TYPE edidc-docnum,
-    mat_new  TYPE mara-matnr,
-    msg     TYPE c LENGTH 200,
-    status  TYPE c LENGTH 4,
-    idx     TYPE sy-tabix,
-    bapiret TYPE STANDARD TABLE OF bapiret2,
-  END OF gt_data.</pre></blockquote>
+      <h6 class="subheader"><?php echo $blog_item['date']; ?> by <a href="#"><?php $blog_item['author']; ?></a></h6>
+			   <?php echo $blog_item['content']; ?>
     </div>
   </div>
 
