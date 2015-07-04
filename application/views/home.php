@@ -43,7 +43,7 @@
   <?php foreach($blog as $blog_item): ?>
   <div class="row">
     <div class="large-9 columns">
-      <h3><?php echo $blog['title']; ?></h3>
+      <h3><?php echo $blog_item['title']; ?></h3>
       <h6 class="subheader">2nd of July 2015 by <a href="#">Arman</a></h6>
 						<p class="blog-content">I’ve been doing ABAP programming ever since I graduated from college and it was my first language that I learned which has been used on my entire 9 years career in software development. Through the years, I was deployed to several projects ranging from Manufacturing, Pharmaceuticals to Retail learning both the functional and technical aspecs of SAP. As the time goes by, I learned to reuse my codes, optimize programs, and develop best practices that later save me huge amout of time in developing new requirements. This library of knowledge I’d like to share to everyone specially those who are starting on ABAP development, so they can save time and write good code at the same time.<br />I hope this website will help you in the future on your development.</p>
             <blockquote><pre>REPORT ztest MESSAGE-ID zmm_ap.<br /><br />START-OF-SELECTION.<br />WRITE: 'Hello World'.<br /><br />DATA:
