@@ -10,7 +10,7 @@
   <meta charset="utf-8">
   <!-- If you delete this meta tag World War Z will become a reality -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Foundation 5</title>
+  <title>ABAP Src</title>
 
   <!-- If you are using the CSS version, only link these 2 files, you may add app.css to use for your overrides if you like -->
   <link rel="stylesheet" href="<?php echo base_url();?>css/normalize.css">
@@ -41,23 +41,22 @@
   </div>
 
   <?php foreach($blog as $blog_item): ?>
-  <div class="row">
-    <div class="large-9 columns">
-      <h3><?php echo $blog_item['title']; ?></h3>
-      <h6 class="subheader"><?php echo date(DATE_RSS,mysql_to_unix($blog_item['date'])); ?> by <a href="#"><?php echo $blog_item['author']; ?></a></h6>
-			   <?php echo $blog_item['content']; ?>
+    <div class="row">
+      <div class="large-9 columns">
+        <h3><?php echo $blog_item['title']; ?></h3>
+        <h6 class="subheader"><?php echo date(DATE_COOKIE,mysql_to_unix($blog_item['date'])); ?> by <a href="#"><?php echo $blog_item['author']; ?></a></h6>
+        <p class="blog-content"><?php echo $blog_item['content']; ?></p>
+      </div>
     </div>
-  </div>
-
-<?php endforeach ?>
+  <?php endforeach ?>
 
   <div class="row" >
     <div class="large-12 columns">
-      <p><?php
+      <p><small>2015 ABAP Src. All rights reserved. <?php
             $this->benchmark->mark('end');
             echo $this->benchmark->elapsed_time('start','end');
-            ?></p>
-
+            ?></small>
+      </p>
     </div>
   </div>
 

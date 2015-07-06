@@ -4,6 +4,6 @@ h1, h2, h3, h6, body{
   font-family: "Roboto Slab";
 }
 
-.blog-content, pre {
+.blog-content{
   font-size: .90rem;
 }
