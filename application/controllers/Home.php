@@ -26,7 +26,7 @@ class Home extends CI_Controller {
 	public function index()
 	{
 		$data['blog'] = $this->blog_model->get_blog();
-		$this->load->view('home',$data);
+		$this->load->view('base',$data);
 	}
 
 	public function view($id = FALSE) {
