@@ -41,7 +41,7 @@
   </div>
 
   <?php
-    $this->load->view($data['content'],$data);
+    $this->load->view($content,$data);
   ?>
 
   <div class="row" >
