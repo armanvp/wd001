@@ -35,7 +35,7 @@
     <div class="large-12 columns">
       <ul class="breadcrumbs">
         <li><a href="<?php echo base_url(); ?>">Home</a></li>
-        <li><a href="<?php echo base_url().'page/show/blog'; ?>">Blog</a></li>
+        <li><a href="<?php echo base_url().'page/view/blog'; ?>">Blog</a></li>
       </ul>
     </div>
   </div>
