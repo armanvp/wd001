@@ -14,13 +14,15 @@ class Page extends CI_Controller {
 		$this->view('home');
 	}
 
-	public function view($page = 'home') {
+	public function view($page = 'home',$param2 = FALSE) {
     $data['content'] = $page;
     
     switch($page) {
       case "home":
         $data['blog'] = $this->blog_model->get_blog();
         break;
+      case "blog":
+        $data['blog'] = $this->blog_model->get_blog($param2);
     }
     
 		$this->load->view('base',$data);

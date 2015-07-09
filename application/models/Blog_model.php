@@ -13,7 +13,7 @@ class Blog_model extends CI_Model {
     }
 
     $query = $this->db->get_where('blog',array('id' => $id));
-    return $query->row_array();
+    return $query->result_array();
   }
 
 }
