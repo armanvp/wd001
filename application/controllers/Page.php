@@ -23,6 +23,9 @@ class Page extends CI_Controller {
         break;
       case "blog":
         $data['blog'] = $this->blog_model->get_blog($param2);
+        if($data['blog'] == NULL) {
+          redirect('/page/view/'.$data['content'],'location',301);
+        }
     }
     
 		$this->load->view('base',$data);
