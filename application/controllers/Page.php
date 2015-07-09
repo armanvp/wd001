@@ -7,7 +7,6 @@ class Page extends CI_Controller {
 		parent::__construct();
 		$this->load->model('blog_model');
 		$this->load->helper('date');
-    $this->load->helper('url');
 	}
 
 	public function index()
@@ -25,8 +24,9 @@ class Page extends CI_Controller {
       case "blog":
         $data['blog'] = $this->blog_model->get_blog($param2);
         if($data['blog'] == NULL) {
-          redirect('/page/view/'.$data['content'],'location',301);
+          $data['blog'] = $this->blog_model->get_blog();
         }
+        break;
     }
     
 		$this->load->view('base',$data);
