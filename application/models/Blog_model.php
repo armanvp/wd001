@@ -18,7 +18,7 @@ class Blog_model extends CI_Model {
   
   public function get_recent($no = 5) {
     $this->db->order_by('id','DESC');
-    $this->db->limit(5);
+    $this->db->limit($no);
     $query = $this->db->get('blog');
     
     return $query->result_array();
