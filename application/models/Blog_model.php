@@ -8,6 +8,7 @@ class Blog_model extends CI_Model {
   public function get_blog($id = FALSE) {
 
     if($id === FALSE) {
+      $this->db->order_by('id','DESC');
       $query = $this->db->get('blog');
       return $query->result_array();
     }
