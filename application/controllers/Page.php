@@ -20,7 +20,7 @@ class Page extends CI_Controller {
     switch($page) {
       case "home":
         $data['blog'] = $this->blog_model->get_blog();
-        $data['blog_recent'] = $this->blog_model=>get_recent();
+        $data['blog_recent'] = $this->blog_model->get_recent();
         break;
       case "blog":
         $data['blog'] = $this->blog_model->get_blog($param2);
