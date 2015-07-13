@@ -39,10 +39,21 @@
       </ul>
     </div>
   </div>
-
+  
+  <div class="row">
+    <div class="large-3 push-3 columns">
+      <h5>Recent Posts</h5>
+      <ul class="side-nav">
+        <li><a href="#">Yet Another Welcome Post</a></li>
+        <li><a href="#">Time to Sleep</a></li>
+      </ul>
+    </div>
+    
   <?php
     $this->load->view($content);
   ?>
+  
+  </div>
 
   <div class="row" >
     <div class="large-12 columns">
