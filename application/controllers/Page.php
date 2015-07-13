@@ -24,7 +24,7 @@ class Page extends CI_Controller {
         break;
       case "blog":
         $data['blog'] = $this->blog_model->get_blog($param2);
-        $data['blog_recent'] = $this->blog_model=>get_recent();
+        $data['blog_recent'] = $this->blog_model->get_recent();
         if($data['blog'] == NULL) {
           $data['blog'] = $this->blog_model->get_blog();
         }
