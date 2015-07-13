@@ -44,8 +44,9 @@
     <div class="large-3 push-9 columns">
       <h5>Recent Posts</h5>
       <ul class="side-nav">
-        <li><a href="#">Yet Another Welcome Post</a></li>
-        <li><a href="#">Time to Sleep</a></li>
+        <?php foreach($blog_recent as $blog_item): ?>
+        <li><a href="<?php echo base_url().'page/view/blog/'.$blog_item['id']; ?>"><?php echo $blog_item['title']; ?></a></li>
+        <?php endforeach ?>
       </ul>
     </div>
     
