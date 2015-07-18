@@ -23,7 +23,7 @@ class User_model extends CI_Model {
 
   /* Saves the user to the master user table */
   public function user_save($user, $password) {
-
+    echo $user;
     /* Validate if the both the user and password are filled */
     if($user == NULL || $password == NULL){
       return FALSE;
