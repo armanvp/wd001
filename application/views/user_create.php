@@ -12,7 +12,7 @@
         </label>
       </div>
       <div class="large-4 columns">
-        <input type="submit" />
+        <input type="submit" class="button" value="Create" />
       </div>
     </div>
   </form>
