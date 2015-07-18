@@ -16,15 +16,14 @@ class Page extends CI_Controller {
 
 	public function view($page = 'home',$param2 = FALSE) {
     $data['content'] = $page;
+		$data['blog_recent'] = $this->blog_model->get_recent();
 
     switch($page) {
       case "home":
         $data['blog'] = $this->blog_model->get_blog();
-        $data['blog_recent'] = $this->blog_model->get_recent();
         break;
       case "blog":
         $data['blog'] = $this->blog_model->get_blog($param2);
-        $data['blog_recent'] = $this->blog_model->get_recent();
         if($data['blog'] == NULL) {
           $data['blog'] = $this->blog_model->get_blog();
         }
