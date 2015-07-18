@@ -14,7 +14,7 @@ class User extends CI_Controller {
 		$pass = $this->input->post('password', TRUE);
 
 		$this->user_model->user_save($user, $pass);
-		//redirect('/page/view/home');
+		redirect('/page/view/home');
 	}
 
 }
