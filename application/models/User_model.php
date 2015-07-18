@@ -30,8 +30,7 @@ class User_model extends CI_Model {
     }
 
     /* Check if the user exits first */
-    if($this->user_get($user) != NULL) {
-      print_r($this->user_get($user));
+    if($this->user_get($user)->num_rows > 0) {
       return FALSE;
     }
 
