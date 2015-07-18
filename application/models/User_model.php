@@ -11,7 +11,7 @@ class User_model extends CI_Model {
 
     /* If User was supplied */
     if(isset($user)) {
-      array_push($where_cond, 'user' => $user);
+      $where_cond = array('user' => $user);
     }else{
       return NULL;
     }
