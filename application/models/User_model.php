@@ -40,7 +40,7 @@ class User_model extends CI_Model {
     $db_password_salt = $this->authenticator->salt_get();
 
     /* Prepare SQL statement */
-    $sql = "INSERT INTO blog (user, password, password_salt) ".
+    $sql = "INSERT INTO user (user, password, password_salt) ".
            "VALUES($db_user, $db_password_hash, $db_password_salt)";
 
     /* Insert the user in the table */
