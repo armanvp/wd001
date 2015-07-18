@@ -1,4 +1,4 @@
-<div class="large-9 columns">
+<div class="large-9 pull-3 columns">
   <form action="<?php echo base_url()."user/create" ?>" method="post">
     <div class="row">
       <div class="large-6 columns">
