@@ -16,7 +16,7 @@ class Page extends CI_Controller {
 
 	public function view($page = 'home',$param2 = FALSE) {
     $data['content'] = $page;
-    
+
     switch($page) {
       case "home":
         $data['blog'] = $this->blog_model->get_blog();
@@ -29,8 +29,10 @@ class Page extends CI_Controller {
           $data['blog'] = $this->blog_model->get_blog();
         }
         break;
+		  case "user_create":
+				break;
     }
-    
+
 		$this->load->view('base',$data);
 	}
 }
