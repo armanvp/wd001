@@ -12,7 +12,7 @@
         </label>
       </div>
       <div class="large-4 columns">
-        <a href="#" onClick="form.submit()" class="button postfix">Create</a>
+        <input type="submit" />
       </div>
     </div>
   </form>
