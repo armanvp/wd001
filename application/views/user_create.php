@@ -11,7 +11,7 @@
           <input type="password" placeholder="password" name="password"/>
         </label>
       </div>
-      <div class="large-4 columns">
+      <div class="large-6 columns">
         <input type="submit" class="button" value="Create" />
       </div>
     </div>
