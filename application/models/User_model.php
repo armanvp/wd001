@@ -27,9 +27,12 @@ class User_model extends CI_Model {
     $result = $this->user_get($user);
 
     /* Check if the user exits first */
-    if($result['num_rows'] > 0) {
+    if($result->num_rows > 0) {
+      echo "Pasok";
       return FALSE;
     }
+
+    print_r($result);
 
     /* Prepare values for insert */
     $db_user = $this->db->escape($user);
