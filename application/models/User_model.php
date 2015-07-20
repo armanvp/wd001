@@ -25,7 +25,7 @@ class User_model extends CI_Model {
       return FALSE;
     }
     $result = $this->user_get($user);
-    print_r($result);
+    
     /* Check if the user exits first */
     if($result->num_rows > 0) {
       return FALSE;

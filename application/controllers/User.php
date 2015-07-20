@@ -17,4 +17,11 @@ class User extends CI_Controller {
 		redirect('/page/view/home');
 	}
 
+	public function test() {
+		$user = $this->input->post('user', TRUE);
+		$pass = $this->input->post('password', TRUE);
+		echo $user." : ".$pass."<br />";
+		print_r($this->user_model->user_get($user));
+	}
+
 }
