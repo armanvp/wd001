@@ -9,10 +9,8 @@ class User_model extends CI_Model {
   /* Retrieves user data */
   public function user_get($user) {
 
-    /* If User was supplied */
-    if(isset($user)) {
-      $where_cond = array('user' => $user);
-    }
+    /* Build WHERE condition */
+    $where_cond = array('user' => $user);
 
     $query = $this->db->get_where('user', $where_cond);
     return $query;
