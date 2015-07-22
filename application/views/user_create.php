@@ -2,7 +2,7 @@
   <form action="<?php echo base_url()."user/create" ?>" method="post">
     <div class="row">
       <div class="large-6 columns">
-        <label>Username
+        <label class="error">Username
           <input type="text" placeholder="user@email.com" name="user" class="error" />
         </label>
         <?php if(isset($this->session->form['user']['message'])): ?>
@@ -10,7 +10,7 @@
         <?php endif; ?>
      </div>
      <div class="large-6 columns">
-        <label>Password
+        <label class="error">Password
           <input type="password" placeholder="password" name="password" class="error" />
         </label>
       </div>
