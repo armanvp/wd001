@@ -34,5 +34,17 @@ class Page extends CI_Controller {
     }
 
 		$this->load->view('base',$data);
+
+		/* Cleanup Functions */
+
+		switch ($page) {
+			case 'user_create':
+				$this->session->unset_userdata('form');
+				break;
+
+			default:
+				# code...
+				break;
+		}
 	}
 }
