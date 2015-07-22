@@ -40,6 +40,7 @@ class Page extends CI_Controller {
 		switch ($page) {
 			case 'user_create':
 				$this->session->unset_userdata('form');
+				$this->session->unset_userdata('css_class');
 				break;
 
 			default:
