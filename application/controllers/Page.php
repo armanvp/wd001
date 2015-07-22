@@ -7,6 +7,7 @@ class Page extends CI_Controller {
 		parent::__construct();
 		$this->load->model('blog_model');
 		$this->load->helper('date');
+    $this->load->library('session');
 	}
 
 	public function index()
