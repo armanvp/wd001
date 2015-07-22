@@ -15,9 +15,11 @@ class User extends CI_Controller {
 		$pass = $this->input->post('password', TRUE);
 
 	  $return = $this->user_model->user_save($user, $pass);
-    
+
     if($return == FALSE){
-      $this->session = array('form' => array('user' => array('message' => 'User already exists') ) );
+      $this->session->set_userdata(
+				array('form' => array('user' => array('message' => 'User already exists') ) )
+			);
     }else{
       $this->session->unset_userdata('form');
     }
