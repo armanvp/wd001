@@ -22,7 +22,7 @@ class User extends CI_Controller {
     }else{
       $this->session->unset_userdata('form');
     }
-		redirect('/page/view/user_create');
+		//redirect('/page/view/user_create');
 	}
 
 	public function test() {
