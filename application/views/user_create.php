@@ -5,7 +5,7 @@
         <label>Username
           <input type="text" placeholder="user@email.com" name="user" class="error" />
         </label>
-        <?php if(isset($this->session->form['user']['message']): ?>
+        <?php if(isset($this->session->form['user']['message'])): ?>
           <small class="error") ><?php echo $this->session->form['user']['message']; ?></small>
         <?php endif; ?>
      </div>
