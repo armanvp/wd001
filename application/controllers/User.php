@@ -18,11 +18,10 @@ class User extends CI_Controller {
     
     if($return == FALSE){
       $this->session = array('form' => array('user' => array('message' => 'User already exists') ) );
-      print_r($this->session);
     }else{
       $this->session->unset_userdata('form');
     }
-		//redirect('/page/view/user_create');
+		redirect('/page/view/user_create');
 	}
 
 	public function test() {
