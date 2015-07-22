@@ -3,13 +3,15 @@
     <div class="row">
       <div class="large-6 columns">
         <label>Username
-          <input type="text" placeholder="user@email.com" name="user"/>
+          <input type="text" placeholder="user@email.com" name="user" class="error" />
         </label>
-        <small class="error"><?php echo $this->session->form['user']['message']; ?></small>
+        <?php if(isset($this->session->form['user']['message']): ?>
+          <small class="error") ><?php echo $this->session->form['user']['message']; ?></small>
+        <?php endif; ?>
      </div>
      <div class="large-6 columns">
         <label>Password
-          <input type="password" placeholder="password" name="password"/>
+          <input type="password" placeholder="password" name="password" class="error" />
         </label>
       </div>
       <div class="large-9 pull-3 columns">
