@@ -7,14 +7,21 @@ class User extends CI_Controller {
 		parent::__construct();
 		$this->load->helper('url');
 		$this->load->model('user_model');
+    $this->load->library('session');
 	}
 
 	public function create() {
 		$user = $this->input->post('user', TRUE);
 		$pass = $this->input->post('password', TRUE);
 
-	  $this->user_model->user_save($user, $pass);
-		redirect('/page/view/home');
+	  $return = $this->user_model->user_save($user, $pass);
+    
+    if($return == FALSE){
+      $this->session = array('form' => array('user' => array('message' => 'User already exists') ) );
+    }else{
+      $this->session->unset_userdata('form');
+    }
+		redirect('/page/view/user_create');
 	}
 
 	public function test() {
