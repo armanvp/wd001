@@ -20,7 +20,7 @@ class User extends CI_Controller {
       $this->session->set_userdata(
 				array('form' => array('user' => array('message' => 'User already exists') ) )
 			);
-			$this->session->css_class = 'css_class="error"';
+			$this->session->css_class = 'class="error"';
     }else{
       $this->session->unset_userdata('form');
 			$this->session->unset_userdata('css_class');
