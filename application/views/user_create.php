@@ -2,16 +2,16 @@
   <form action="<?php echo base_url()."user/create" ?>" method="post">
     <div class="row">
       <div class="large-6 columns">
-        <label class="error">Username
-          <input type="text" placeholder="user@email.com" name="user" class="error" />
+        <label <?php echo $this->session->css_class; ?>>Username
+          <input type="text" placeholder="user@email.com" name="user" <?php echo $this->session->css_class; ?> />
         </label>
         <?php if(isset($this->session->form['user']['message'])): ?>
           <small class="error") ><?php echo $this->session->form['user']['message']; ?></small>
         <?php endif; ?>
      </div>
      <div class="large-6 columns">
-        <label class="error">Password
-          <input type="password" placeholder="password" name="password" class="error" />
+        <label <?php echo $this->session->css_class; ?>>Password
+          <input type="password" placeholder="password" name="password" <?php echo $this->session->css_class; ?> />
         </label>
       </div>
       <div class="large-9 pull-3 columns">
