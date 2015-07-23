@@ -19,14 +19,14 @@ class Form {
   /* UnSet Form Field Message */
   public function msg_unset($form, $field) {
     $this->CI->session->unset_userdata(
-      'form.'.$form.'.'.$field
+      'form.'.$form.'.'.$field.'.msg'
     );
   }
 
   /* Get Form Field Message */
   public function msg_get($form, $field) {
     return $this->CI->session->userdata(
-      'form.'.$form.'.'.$field
+      'form.'.$form.'.'.$field.'.msg'
     );
   }
 
