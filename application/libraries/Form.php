@@ -12,7 +12,7 @@ class Form {
   /* Set Form Field Message */
   public function msg_set($form, $field, $msg) {
     $this->session->set_userdata(
-      array('form'.$form.'.'.$field.'.msg' => $msg);
+      array('form'.$form.'.'.$field.'.msg' => $msg)
     );
   }
 

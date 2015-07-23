@@ -19,7 +19,7 @@ class User extends CI_Controller {
 
     if($return == FALSE){
       $this->session->set_userdata(
-				$this->form->msg_set('user_create','user','User already exists');
+				$this->form->msg_set('user_create','user','User already exists')
 			);
 			$this->session->css_class = 'class="error"';
     }else{
