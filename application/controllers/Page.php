@@ -30,6 +30,7 @@ class Page extends CI_Controller {
         }
         break;
 		  case "user_create":
+				$this->load->library('form');
 				break;
     }
 

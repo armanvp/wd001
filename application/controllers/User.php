@@ -8,6 +8,7 @@ class User extends CI_Controller {
 		$this->load->helper('url');
 		$this->load->model('user_model');
     $this->load->library('session');
+		$this->load->lirary('form');
 	}
 
 	public function create() {
@@ -18,7 +19,8 @@ class User extends CI_Controller {
 
     if($return == FALSE){
       $this->session->set_userdata(
-				array('form' => array('user' => array('message' => 'User already exists') ) )
+				array('form' =>
+					array('name' => array('message' => 'User already exists') ) )
 			);
 			$this->session->css_class = 'class="error"';
     }else{
