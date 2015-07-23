@@ -5,7 +5,7 @@
         <label <?php echo $this->session->css_class; ?>>Username
           <input type="text" placeholder="user@email.com" name="user" <?php echo $this->session->css_class; ?> />
         </label>
-        <?php if($this->form->msg_get('user_create','user') != NULL): ?>
+        <?php if($this->form->msg_get('user_create','user') != ''): ?>
           <small class="error") ><?php echo $this->form->msg_get('user_create','user'); ?></small>
         <?php endif; ?>
      </div>
