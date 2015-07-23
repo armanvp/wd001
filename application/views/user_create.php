@@ -5,8 +5,8 @@
         <label <?php echo $this->session->css_class; ?>>Username
           <input type="text" placeholder="user@email.com" name="user" <?php echo $this->session->css_class; ?> />
         </label>
-        <?php if(isset($this->session->form['user']['message'])): ?>
-          <small class="error") ><?php echo $this->session->form['user']['message']; ?></small>
+        <?php if(isset($this->form->msg_get('user_create','user'))): ?>
+          <small class="error") ><?php echo $this->form->msg_get('user_create','user'); ?></small>
         <?php endif; ?>
      </div>
      <div class="large-6 columns">
