@@ -31,7 +31,7 @@ class User extends CI_Controller {
 		$user = $this->input->post('user', TRUE);
 		$pass = $this->input->post('password', TRUE);
 
-		$this->user_model->user_auth($user, $pass);
+		print_r($this->user_model->user_auth($user, $pass));
 	}
 
 	public function test() {
