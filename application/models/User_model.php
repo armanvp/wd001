@@ -20,7 +20,7 @@ class User_model extends CI_Model {
   public function user_auth($user, $password) {
     $user_data = $this->user_get($user);
     $row = $user_data->row();
-    if($row->password == $this->authenticator->password_hash_get($password)) {
+    if($row->password == sha1($password . $row->password_salt)) {
       return TRUE;
     }else{
       return FALSE;
