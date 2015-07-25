@@ -9,7 +9,7 @@ class Authenticator {
 
   /* Generates a 16 byte salt */
   public function salt_generate(){
-    return openssl_random_pseudo_bytes(16);
+    return bin2hex(openssl_random_pseudo_bytes(16));
   }
 
 }
