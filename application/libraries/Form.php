@@ -29,7 +29,7 @@ class Form {
   /* Get Form Field Message */
   public function msg_get($form, $field) {
     return $this->CI->session->userdata(
-      $this->id_get($form, $field, 'msg');
+      $this->id_get($form, $field, 'msg')
     );
   }
 
