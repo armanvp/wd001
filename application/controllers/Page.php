@@ -29,7 +29,7 @@ class Page extends CI_Controller {
           $data['blog'] = $this->blog_model->get_blog();
         }
         break;
-		  case "user_create":
+		  case 'user_create' || 'user_login':
 				$this->load->library('form');
 				break;
     }
@@ -39,7 +39,7 @@ class Page extends CI_Controller {
 		/* Cleanup Functions */
 
 		switch ($page) {
-			case 'user_create':
+			case 'user_create' || 'user_login':
 				$this->session->unset_userdata('form');
 				$this->session->unset_userdata('css_class');
 				break;
