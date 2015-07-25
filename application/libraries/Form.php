@@ -10,24 +10,46 @@ class Form {
   }
 
   /* Set Form Field Message */
-  public function msg_set($form, $field, $msg) {
+  public function msg_set($form, $field, $msg, $msgty) {
     $this->CI->session->set_userdata(
-      array('form.'.$form.'.'.$field.'.msg' => $msg)
+      array(
+        $this->id_get($form, $field, 'msg') => $msg,
+        $this->id_get($form, $field, 'msgty') => $msgty
+      )
     );
   }
 
   /* UnSet Form Field Message */
   public function msg_unset($form, $field) {
     $this->CI->session->unset_userdata(
-      'form.'.$form.'.'.$field.'.msg'
+      $this->id_get($form, $field, 'msg')
     );
   }
 
   /* Get Form Field Message */
   public function msg_get($form, $field) {
     return $this->CI->session->userdata(
-      'form.'.$form.'.'.$field.'.msg'
+      $this->id_get($form, $field, 'msg');
     );
+  }
+
+  /* Retrieves the message type */
+  public function msg_get_type($form, $field) {
+    return $this->CI->session->userdata(
+      $this->id_get($form, $field, 'msgty')
+    );
+  }
+
+  /* Retrieves the CSS class */
+  public function msg_get_css_class($form, $field) {
+    if($this->msg_get_type($form, $field) == 'E') {
+      return 'class="error"';
+    }
+  }
+
+  /* Builds a form session id */
+  private function id_get($form, $field, $prop) {
+    return 'form.'.$form.'.'.$field.'.'.$prop;
   }
 
 }
