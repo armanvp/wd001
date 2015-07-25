@@ -18,7 +18,7 @@ class User extends CI_Controller {
 	  $return = $this->user_model->user_save($user, $pass);
 
     if($return == FALSE){
-		  $this->form->msg_set('user_create','user','User already exists');
+		  $this->form->msg_set('user_create','user','User already exists','E');
 			$this->session->css_class = 'class="error"';
     }else{
       $this->form->msg_unset('user_create','user');
