@@ -22,7 +22,8 @@ class Form {
   /* UnSet Form Field Message */
   public function msg_unset($form, $field) {
     $this->CI->session->unset_userdata(
-      $this->id_get($form, $field, 'msg')
+      $this->id_get($form, $field, 'msg'),
+      $this->id_get($form, $field, 'msgty')
     );
   }
 
