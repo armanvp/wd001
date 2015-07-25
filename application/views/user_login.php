@@ -4,7 +4,7 @@
   $user_msg_css_class = $this->form->msg_get_css_class('user_create','user');
 ?>
 <div class="large-9 pull-3 columns">
-  <form action="<?php echo base_url()."user/create" ?>" method="post">
+  <form action="<?php echo base_url()."user/login" ?>" method="post">
     <div class="row">
       <div class="large-6 columns">
         <label <?php echo $user_msg_css_class; ?>>Username
@@ -20,7 +20,7 @@
         </label>
       </div>
       <div class="large-9 pull-3 columns">
-        <input type="submit" class="button" value="Create" />
+        <input type="submit" class="button" value="Login" />
       </div>
     </div>
   </form>

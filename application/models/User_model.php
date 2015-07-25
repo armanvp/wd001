@@ -17,6 +17,12 @@ class User_model extends CI_Model {
 
   }
 
+  public function user_auth($user, $password) {
+    $user_data = $this->user_get($user);
+
+    print_r($user_data);
+  }
+
   /* Saves the user to the master user table */
   public function user_save($user, $password) {
 

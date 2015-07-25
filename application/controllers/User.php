@@ -27,6 +27,13 @@ class User extends CI_Controller {
 		redirect('/page/view/user_create');
 	}
 
+	public function login() {
+		$user = $this->input->post('user', TRUE);
+		$pass = $this->input->post('password', TRUE);
+
+		$this->user_model->user_auth($user, $pass);
+	}
+
 	public function test() {
 		$user = $this->input->post('user', TRUE);
 		$pass = $this->input->post('password', TRUE);
