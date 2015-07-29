@@ -4,7 +4,15 @@ class Authenticator {
 
   /* Builds the password hash */
   public function password_hash_get($password){
-    return sha1($password . $this->salt_generate());
+
+    $salt          = $this->salt_generate();
+    $password_hash = sha1($password . $salt);
+
+    return (object) array (
+      "hash" => $password_hash,
+      "salt" => $salt
+    );
+
   }
 
   /* Generates a 16 byte salt */
