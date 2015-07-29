@@ -34,6 +34,7 @@ class User extends CI_Controller {
 		if($this->user_model->user_auth($user, $pass)) {
 			echo "Login sucessfully";
 		}else{
+			print_r($this->user_model->user_auth($user, $pass));
 			echo "Login failed";
 		}
 	}
