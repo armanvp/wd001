@@ -13,7 +13,7 @@ class UserManager {
     $this->CI =& get_instance();
 
     /* StartUp Items */
-    $this->session = $this->CI->load->library('session');
+    $this->session =& $this->CI->load->library('session');
 
     /* Extract user's data from Session */
     $this->user = $this->session('user');
