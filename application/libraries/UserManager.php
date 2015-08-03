@@ -2,7 +2,7 @@
 
 class UserManager {
 
-  protected $CI;
+  public $CI;
   private   $session;
   private   $user;
 
