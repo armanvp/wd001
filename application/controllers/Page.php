@@ -8,7 +8,7 @@ class Page extends CI_Controller {
 		$this->load->model('blog_model');
 		$this->load->helper('date');
     $this->load->library('session');
-		$this->load->library('usermanager');
+		$this->load->library('userManager');
 	}
 
 	public function index()
