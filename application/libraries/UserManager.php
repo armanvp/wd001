@@ -35,8 +35,8 @@ class UserManager {
   /* Set's User's Data */
   private function set_user($user) {
     $this->user = array(
-      'user' => $user;
-    )
+      'user' => $user
+    );
   }
 
 }
