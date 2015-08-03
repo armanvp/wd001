@@ -27,7 +27,7 @@ class UserManager {
 
     /* Initialize User's Data */
     if( empty($this->user) ) {
-      this->set_user('Arman');
+      $this->set_user('Arman');
     }
 
   }
