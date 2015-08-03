@@ -15,7 +15,7 @@ class UserManager {
     $this->CI->load->library('session');
 
     /* Extract user's data from Session */
-    $this->CI->session('user');
+    $this->user = $this->session('user');
 
     /* Set Default User Data */
     $this->initialize();
