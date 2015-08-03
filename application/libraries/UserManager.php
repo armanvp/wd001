@@ -2,7 +2,7 @@
 
 class UserManager {
 
-  public $CI;
+  protected $CI;
   private   $session;
   private   $user;
 
@@ -16,7 +16,7 @@ class UserManager {
     $this->CI->load->library('session');
 
     /* Extract user's data from Session */
-    $this->user = $CI->session('user');
+    $this->user = $this->CI->session('user');
 
     /* Set Default User Data */
     $this->initialize();
