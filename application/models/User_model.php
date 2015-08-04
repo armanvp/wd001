@@ -45,12 +45,10 @@ class User_model extends CI_Model {
     /* Prepare values for insert */
     $db_user = $this->db->escape($user);
     $password = $this->authenticator->password_hash_get($password);
-    $db_password_hash = $password->hash;
-    $db_password_salt = $password->salt;
 
     /* Prepare SQL statement */
     $sql = "INSERT INTO user (user, password, password_salt) ".
-           "VALUES($db_user, '$db_password_hash', '$db_password_salt')";
+           "VALUES($db_user, '$password->hash', '$password->salt')";
 
     /* Insert the user in the table */
     return $this->db->query($sql);
