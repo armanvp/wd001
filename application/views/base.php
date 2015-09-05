@@ -41,7 +41,7 @@
   </div>
 
   <div class="row">
-    <div class="large-3 columns">
+    <div class="large-3 push-9 columns">
       <h5>Recent Posts</h5>
       <ul class="side-nav">
         <?php foreach($blog_recent as $blog_item): ?>

@@ -1,3 +1,4 @@
+<div class ="large-9 push-3 columns">
   <?php foreach($blog as $blog_item): ?>
       <!--// Main Content -->
       <div class="large-9 columns">
@@ -6,3 +7,4 @@
         <p class="blog-content"><?php echo $blog_item['content']; ?></p>
       </div>
   <?php endforeach ?>
+</div>
