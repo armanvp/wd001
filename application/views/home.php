@@ -1,4 +1,4 @@
-<div class ="large-9 push-3 columns">
+<div class ="large-9 pull-3 columns">
   <?php foreach($blog as $blog_item): ?>
       <!--// Main Content -->
       <div class="large-9 columns">
