@@ -50,7 +50,7 @@
       </ul>
     </div>
 
-    <div class="large-9 columns">
+    <div class="large-12 columns">
       <?php $this->load->view($content); ?>
     </div>
 
