@@ -50,7 +50,7 @@
       </ul>
     </div>
 
-    <div class="large-9 pull-3 columns end">
+    <div class="large-9 pull-3 columns">
       <?php $this->load->view($content); ?>
     </div>
 
